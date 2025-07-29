@@ -1,0 +1,190 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f0; 
+    color: #4a4a4a; 
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #8c5e58; 
+    color: #fff8f5; 
+    padding: 3rem 1rem; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content .logo {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%; 
+    border: 3px solid #f7e0c8; 
+}
+
+header h1 {
+    font-size: 3.5rem; 
+    margin: 0;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+header .slogan {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+
+.section-container {
+    max-width: 1000px; 
+    margin: 2rem auto; 
+    padding: 2rem;
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-container h2 {
+    color: #a06e45; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #f7e0c8; 
+    padding-bottom: 10px;
+}
+
+
+.menu-cards-container {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; 
+    justify-content: center; 
+}
+
+
+.producto-card {
+    background-color: #fff5eb; 
+    padding: 1.5rem;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 1px solid #f0d5c0; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); 
+    background-color: #fffaf5; 
+}
+
+.producto-card .producto-img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 1rem;
+    border: 3px solid #d8b792; 
+    object-fit: cover; 
+}
+
+.producto-card h3 {
+    color: #6a492b; 
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.producto-card .descripcion-producto {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1; 
+}
+
+.producto-card .precio {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b35f2a; 
+    margin-top: 1rem;
+}
+
+
+#horarios ul {
+    list-style: none; 
+    padding: 0;
+    text-align: center;
+}
+
+#horarios li {
+    background-color: #f7e0c8; 
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    font-size: 1.1rem;
+    color: #6a492b;
+}
+
+
+footer {
+    background-color: #5e433f; 
+    color: #fff8f5;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+footer a {
+    color: #f7d5c0; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .section-container {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+    .menu-cards-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header .slogan {
+        font-size: 1rem;
+    }
+    .section-container h2 {
+        font-size: 1.8rem;
+    }
+    .producto-card .producto-img {
+        max-width: 150px;
+    }
+}
